@@ -1,0 +1,75 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+
+    "modules-left": [
+        "niri/workspaces"
+    ],
+
+    "modules-right": [
+        "network",
+        "bluetooth",
+        "cpu",
+        "memory",
+        "temperature",
+        "backlight",
+        "battery",
+        "pulseaudio",
+        "clock"
+    ],
+
+    "niri/workspaces": {
+        "format": "{index}",
+        "all-outputs": true
+    },
+
+    "network": {
+        "format-wifi": "󰖩 {essid}",
+        "format-ethernet": "󰈀 {ipaddr}",
+        "format-disconnected": "󰖪",
+        "tooltip-format": "{ifname}: {ipaddr}"
+    },
+
+    "bluetooth": {
+        "format": "󰂯",
+        "format-connected": "󰂱",
+        "format-disabled": "󰂲",
+        "tooltip-format": "{controller_alias}\n{num_connections} connected"
+    },
+
+    "cpu": {
+        "format": "CPU {usage}%"
+    },
+
+    "memory": {
+        "format": "RAM {percentage}%"
+    },
+
+    "temperature": {
+        "format": "TEMP {temperatureC}°C",
+        "critical-threshold": 80,
+        "format-critical": "TEMP {temperatureC}°C"
+    },
+
+    "backlight": {
+        "format": "BL {percent}%"
+    },
+
+    "battery": {
+        "format": "{capacity}%",
+        "format-charging": "{capacity}%+",
+        "format-full": "{capacity}%"
+    },
+
+    "pulseaudio": {
+        "format": "VOL {volume}%",
+        "format-muted": "MUTE",
+        "on-click": "pavucontrol"
+    },
+
+    "clock": {
+        "format": "{:%H:%M}",
+        "tooltip-format": "{:%A, %d %B %Y}"
+    }
+}

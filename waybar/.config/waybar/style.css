@@ -1,0 +1,41 @@
+* {
+    font-family: "Iosevka";
+    font-size: 13px;
+    font-weight: 500;
+    color: #dbdbdb;
+}
+
+window#waybar {
+    background: #111;
+    color: #dbdbdb;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    margin: 0;
+    color: #dbdbdb;
+    background: #111;
+    border: none;
+    border-radius: 0;
+}
+
+#workspaces button.active,
+#workspaces button:hover,
+#workspaces button.urgent {
+    color: #dbdbdb;
+    background: #111;
+}
+
+#network,
+#bluetooth,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#battery,
+#pulseaudio,
+#clock {
+    padding: 0 8px;
+    background: #111;
+    color: #dbdbdb;
+}
