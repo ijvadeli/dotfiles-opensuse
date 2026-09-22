@@ -8,7 +8,7 @@
 // https://niri-wm.github.io/niri/Configuration:-Input
 
 // Set wallpaper
-spawn-at-startup "swaybg" "-i" "/home/idh/Pictures/wall1.jpg"
+spawn-at-startup "swaybg" "-i" "/home/idh/Pictures/wall2.jpg" "-m" "fill"
 
 // No window titles/bars
 prefer-no-csd
