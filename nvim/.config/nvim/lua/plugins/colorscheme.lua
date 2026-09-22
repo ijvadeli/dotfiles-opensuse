@@ -1,17 +1,21 @@
 return {
   {
-    "folke/tokyonight.nvim",
+    "EdenEast/nightfox.nvim",
+    lazy = false,
     priority = 1000,
-    lazy = true,
-    opts = {
-      style = "night",
-      transparent = true,
-    },
+    config = function()
+      require("nightfox").setup({
+        options = {
+          transparent = true,
+          floats = "transparent",
+        },
+      })
+    end,
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight-night",
+      colorscheme = "terafox",
     },
   },
 }
