@@ -25,16 +25,16 @@
     },
 
     "network": {
-        "format-wifi": "󰖩 {essid}",
-        "format-ethernet": "󰈀 {ipaddr}",
-        "format-disconnected": "󰖪",
+        "format-wifi": "WIFI {essid}",
+        "format-ethernet": "ETH {ipaddr}",
+        "format-disconnected": "disconnected",
         "tooltip-format": "{ifname}: {ipaddr}"
     },
 
     "bluetooth": {
-        "format": "󰂯",
-        "format-connected": "󰂱",
-        "format-disabled": "󰂲",
+        "format": "BT",
+        "format-connected": "BT",
+        "format-disabled": "disabled",
         "tooltip-format": "{controller_alias}\n{num_connections} connected"
     },
 
@@ -53,13 +53,13 @@
     },
 
     "backlight": {
-        "format": "BL {percent}%"
+        "format": "BR {percent}%"
     },
 
     "battery": {
-        "format": "{capacity}%",
-        "format-charging": "{capacity}%+",
-        "format-full": "{capacity}%"
+        "format": "BAT {capacity}%",
+        "format-charging": "BAT {capacity}%+",
+        "format-full": "BAT {capacity}%"
     },
 
     "pulseaudio": {
@@ -69,7 +69,7 @@
     },
 
     "clock": {
-        "format": "{:%H:%M}",
-        "tooltip-format": "{:%A, %d %B %Y}"
+        "format": "{:%a, %d %b %H:%M}",
+        "tooltip-format": "{:%a, %d %b %Y}"
     }
 }
